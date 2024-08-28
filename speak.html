@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text to Speech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="speak.css">
+</head>
+<body>
+  <h1>Text to Speech</h1>
+  <div>
+    <textarea id="input" placeholder="Type your text here"></textarea>
+    <br>
+    <button onclick="speak()" class="pushable">
+      <span class="shadow"></span>
+      <span class="edge"></span>
+      <span class="front">
+        Speak
+      </span>
+    </button>
+    <button onclick="stop()" class="pushable">
+      <span  class="shadow"></span>
+      <span class="edge"></span>
+      <span class="front">
+      Stop
+      </span>
+    </button>
+ <button onclick="toggleDarkMode()" class="pushable">
+  <span class="shadow"></span>
+  <span class="edge"></span>
+  <span class="front">
+    Dark Mode
+  </span>
+</button>
+
+    
+  </div>
+  <script src="speak.js" defer></script>
+</body>
+</html>
